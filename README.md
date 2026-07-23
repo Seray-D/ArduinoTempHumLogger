@@ -1,3 +1,4 @@
+```markdown
 # Arduino Temperature and Humidity Logger
 
 ![Java CI Build](https://github.com/Seray-D/ArduinoTempHumLogger/actions/workflows/ci.yml/badge.svg)
@@ -21,7 +22,10 @@ ArduinoTempHumLogger/
 │   ├── src/main/resources/   # Configuration templates
 │   └── pom.xml               # Maven dependency management
 └── .github/workflows/        # CI/CD automated build pipelines
+
 ```
+
+---
 
 ## System Requirements & Tech Stack
 
@@ -30,6 +34,8 @@ ArduinoTempHumLogger/
 * **Backend Runtime:** Java 17+ / Maven
 * **Database:** MySQL Server 8.0+
 * **Core Libraries:** `jSerialComm` (Serial communication), `mysql-connector-j` (Database driver)
+
+---
 
 ## Getting Started
 
@@ -53,6 +59,7 @@ CREATE TABLE readings (
     humidity FLOAT NOT NULL,
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
 ```
 
 ### 3. Backend Configuration & Execution
@@ -66,14 +73,22 @@ db.user=your_db_user
 db.password=your_db_password
 serial.port=COM3
 baud.rate=9600
+
 ```
 
-Compile and execute the application using Maven:
+3. Compile and execute the application using Maven:
 
 ```bash
 mvn clean compile exec:java
+
 ```
+
+---
 
 ## License
 
 Distributed under the **MIT License**. See `LICENSE` for more details.
+
+```
+
+```
